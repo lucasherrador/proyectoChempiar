@@ -1,0 +1,302 @@
+/* Disenos globales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Libre Baskerville', serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #FBACA7;
+    border-bottom: 1px solid black;
+}
+
+.header__logo {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: #7C3E3E;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+}
+
+.menu__link {
+    font-size: 2rem;
+    padding: 2rem;
+    transition: all 1s;
+    color: black;
+
+}
+
+/* Pagina inicio */
+
+.contenido {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 500px auto 300px;
+    gap: 1rem;
+    padding: 20px;
+    background-color: beige;
+}
+
+/* Banner */
+
+.banner {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 1;
+    /* border: 2px solid black; */
+    padding: 20px;
+}
+
+.banner__img {
+    max-width: 900px;
+    max-height: 450px;
+}
+
+/* Introduccion texto */
+
+.introduccion {
+    display: grid;
+    grid-column: 5/7;
+    grid-row: 1;
+    /* border: 2px solid black; */
+    padding: 10px
+}
+
+.introduccion__texto {
+    font-size: 2rem;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.introduccion__boton {
+    font-size: 2rem;
+    background-color: #7C3E3E;
+    color: white;
+    border-radius: 30px;
+    height: 60px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+/* Leyenda subtitulos */
+
+.subtitulo {
+    display: grid;
+    grid-column: span 6;
+    grid-row: 2;
+    /* border: 2px solid black; */
+    margin-top: 60px;
+}
+
+.subtitulo__texto {
+    justify-self: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+/* Tarjetas de galeria */
+
+.cards {
+    display: grid;
+    grid-column: span 1;
+    /* border: 2px solid black; */
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 20px;
+    /* background-color: white; */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#cards__img {
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 20px;
+
+}
+
+.leyenda {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Pagina nosotros */
+
+.contenidoNosotros {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 20px;
+    background-color: beige;
+}
+
+
+.bannerNosotros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(https://www.cordobatimes.com/wp-content/uploads/2017/08/travel.jpg);
+    background-size: contain;
+    background-size: cover;
+    max-width: 1200px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.descripcionNosotros {
+    background-color: lightblue;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.descripcionNosotros h1 {
+    padding: 10px;
+}
+
+.videoNosotros {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+    /* Inicio */
+
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto auto 250px 250px;
+        background-color: beige;
+    }
+
+    .header__logo {
+        font-size: 1rem;
+    }
+
+    .menu__link {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 3rem;
+    }
+
+    /* Banner */
+
+    .banner {
+        display: grid;
+        grid-column: span 3;
+        grid-row: 1;
+    }
+
+    /* Introduccion texto */
+
+    .introduccion {
+        display: grid;
+        grid-column: span 3;
+        grid-row: 2;
+    }
+
+    .introduccion__texto{
+        margin-top: 1rem;
+    }
+
+    .introduccion__boton {
+        font-size: 2rem;
+        background-color: #7C3E3E;
+        color: white;
+        border-radius: 30px;
+        height: 60px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Leyenda subtitulos */
+
+    .subtitulo {
+        display: grid;
+        grid-column: span 3;
+        grid-row: 3;
+    }
+
+    /* Tarjetas de galeria */
+
+    .cards {
+        display: grid;
+        grid-column: span 1;
+    }
+
+}
