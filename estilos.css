@@ -33,12 +33,14 @@ header {
     padding: 2rem 0;
     background-color: #FBACA7;
     border-bottom: 1px solid black;
+    height: 50px;
 }
 
 .header__logo {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+    transition: all 1s;
 }
 
 footer {
@@ -64,6 +66,7 @@ footer p {
     padding: 2rem;
     transition: all 1s;
     color: black;
+    transition: all 1s;
 
 }
 
@@ -222,6 +225,76 @@ footer p {
     justify-content: center;
 }
 
+/* Transformaciones y gradiantes */
+
+.contenido{
+    background-image: radial-gradient(
+        circle,
+        rgb(255,255,255),
+        /* rgb(131, 168, 225) */
+        rgba(197, 197, 164, 0.989)
+    );
+}
+
+header{
+    background-image: linear-gradient(to top, #FBACA7, white);
+}
+
+.header__logo:hover{
+    font-size: 2rem;
+    color: solid black;
+}
+
+.banner__img{
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+
+.introduccion{
+    animation: fadeInDown;
+    animation-duration: 1s;
+}
+
+.menu__link:hover{
+    font-size: 3rem;
+    color: solid black;
+}
+
+.introduccion__boton:hover{
+    font-size: 2rem;
+    height: 70px;
+    width: 160px;
+    color: solid white;
+    background-color: rgb(168, 17, 17);
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+
+.subtitulo{
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+.cards{
+    animation: fadeInUpBig;
+    animation-duration: 2s;
+}
+
+.bannerNosotros{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.descripcionNosotros{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.videoNosotros{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
 
 /* Responsive */
 
